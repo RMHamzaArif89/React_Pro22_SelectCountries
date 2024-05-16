@@ -1,20 +1,20 @@
-Data=[
+const Data=[
     {
         name:'Pakistan',
-        img:'',
+        img:'/images/pk.jpg',
         cities:[
        {
         name:'Lahore',
-        img:'',
+        img:'/images/pk_1.jpg',
         h1:''
         
        },{
         name:'Islamabad',
-        img:'',
+        img:'/images/pk_2.jpg',
        h1:'' 
        },{
         name:'Karachi',
-        img:'',
+        img:'/images/pk_3.jpg',
         h1:''
        }
         ],
@@ -22,20 +22,20 @@ Data=[
     },
     {
         name:'India',
-        img:'',
+        img:'/images/ind.jpg',
         cities:[
             {
                 name:'Mumbai',
-                img:'',
+                img:'/images/ind_1.jpg',
                 h1:''
             },
             {
                 name:'Delhi',
-                img:'',
+                img:'/images/ind_2.jpg',
                 h1:''   
             },{
                 name:'Kolkata',
-                img:'',
+                img:'/images/ind_3.jpg',
                 h1:''
             }
         ],
@@ -43,20 +43,20 @@ Data=[
     },
     {
         name:'China',
-        img:'',
+        img:'/images/china.jpg',
         cities:[
             {
                 name:'Shanghai',
-                img:'',
+                img:'/images/china_1.jpg',
                 h1:""
             },
             {
                 name:'Beijing',
-                img:'',
+                img:'/images/china_2.jpg',
                 h1:''
             },{
                 name:'Guangzhou',
-                img:'',
+                img:'/images/china_3.jpg',
                 h1:''
             }
         ],
@@ -64,42 +64,43 @@ Data=[
     },
     {
         name:'America',
-        img:'',
+        img:'/images/america.jpg',
         cities:[
             {
             name:'New York',
-            img:'',
+            img:'/images/america.jpg',
             h1:''
 
             },
             {
                 name:'Los Angeles',
-                img:'',
+                img:'/images/america.jpg',
                 h1:''
             },{
                 name:'Chicago',
-                img:'',
+                img:'/images/america.jpg',
                 h1:''
             }
-        ]
+        ],
+        h1:'america'
         
     },
     {
         name:'England',
-        img:'',
+        img:'/images/eng.jpg',
         cities:[
             {
                 name:'London',
-                img:'',
+                img:'/images/eng_1.jpg',
                 h1:''
             },{
                 name:'Manchester',
-                img:'',
+                img:'/images/eng_2.jpg',
                 h1:''
             },
             {
                 name:'Birmingham',
-                img:'',
+                img:'/images/eng_3.jpg',
                 h1:''
             }
         ]
@@ -107,14 +108,27 @@ Data=[
     },
     {
         name:'Japan',
-        img:'',
+        img:'/images/japan.jpg',
         cities:[
             {
                 name:'Tokyo',
-                img:'',
+                img:'/images/j_1.jpg',
+                h1:''
+            },
+            {
+                name:'Osaka',
+                img:'/images/j_2.jpg',
+                h1:''
+            },
+            {
+                name:'Kyoto',
+                img:'/images/j_3.jpg',
                 h1:''
             }
-        ]
+        ],
+        h1:'japan'
        
     },
 ]
+
+export default Data;

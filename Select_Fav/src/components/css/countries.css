@@ -1,0 +1,37 @@
+.countries_con{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: lightblue;
+}
+.countries_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 24%;
+    height: 220px;
+    border-radius: 12px;
+    position: relative;
+
+}
+.countries_card:hover{
+    cursor: pointer;
+}
+.countries_card img{
+    width: 100%;
+    height: 100%;
+
+}
+.countries_card .name{
+    z-index:100;
+    position: absolute;
+    background: lightcoral;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.2rem;
+    font-family: serif;
+
+}
