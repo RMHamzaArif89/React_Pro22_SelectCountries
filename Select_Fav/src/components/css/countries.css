@@ -1,27 +1,38 @@
 .countries_con{
-    width: 90%;
+    width: 100%;
+    min-height: 400px;
+    max-height:auto;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
     background: lightblue;
 }
 .countries_card{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 24%;
-    height: 220px;
-    border-radius: 12px;
+    width: 18%;
+    height: 180px;
+    border-radius: 18px;
     position: relative;
 
 }
 .countries_card:hover{
     cursor: pointer;
+    position: relative; 
+    top: -10px;
+    transition: transform .4s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: rotate(10deg);
+
+      
 }
 .countries_card img{
     width: 100%;
     height: 100%;
+    border-radius: 18px;
 
 }
 .countries_card .name{
@@ -33,5 +44,8 @@
     color: black;
     font-size: 1.2rem;
     font-family: serif;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }

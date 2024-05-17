@@ -1,18 +1,22 @@
 import React, { useContext } from 'react'
 import './css/countries.css'
-import DataContext from './Context_Provider'
+import { ValContext } from './Context_Provider'
 
 
 function Countries() {
-  let {data}=useContext(DataContext)
+  const{data}=useContext(ValContext)
+
   return (
-    <div className='contries_con'>
+    <div className='countries_con'>
+     
       {
         data.map((item)=>{
-         <div className="contries_cart">
+         return(
+          <div className="countries_card">
           <img src={item.img} alt="" className="img" />
-          <div className="name">{item.name}</div>
+          <div className="name">{item.name} </div>
          </div>
+         )
         })
       }
       
