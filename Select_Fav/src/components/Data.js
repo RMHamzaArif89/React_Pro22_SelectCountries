@@ -68,17 +68,17 @@ const Data=[
         cities:[
             {
             name:'New York',
-            img:'/images/america.jpg',
+            img:'/images/america_1.jpg',
             h1:''
 
             },
             {
                 name:'Los Angeles',
-                img:'/images/america.jpg',
+                img:'/images/america_2.jpg',
                 h1:''
             },{
                 name:'Chicago',
-                img:'/images/america.jpg',
+                img:'/images/america_3.jpg',
                 h1:''
             }
         ],

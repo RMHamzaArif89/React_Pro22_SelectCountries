@@ -13,7 +13,7 @@ let[selectedData,setSelectedData]=useState([])
 let [moduleData,setModuleData]=useState([])
 
 const ShowModule=(item)=>{
-  setModuleData(()=>({item}))
+  setModuleData(item)
 
 }
 
@@ -24,9 +24,13 @@ setSelectedData((items)=>([...items,item]))
 }
 
 
+let cross=()=>{
+  setModuleData([])
+}
+
 
   return(
- <ValContext.Provider value={{data,selected,selectedData,ShowModule,moduleData}}>
+ <ValContext.Provider value={{data,selected,selectedData,ShowModule,moduleData,cross}}>
  {children}
  </ValContext.Provider>
   )

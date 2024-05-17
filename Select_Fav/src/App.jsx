@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import './App.css'
 import Countries from './components/Countries'
 import Selected from './components/Selected'
+import ConDetail from './components/ConDetail'
 import { ValContext } from './components/Context_Provider'
 function App() {
   let {moduleData}=useContext(ValContext)
@@ -10,7 +11,7 @@ function App() {
   <>
   <Selected/>
   <Countries/>
-  {moduleData.length!=0?'okay':'blank'}
+  {moduleData.length!=0?<ConDetail/>:''}
   </>
   )
 }
