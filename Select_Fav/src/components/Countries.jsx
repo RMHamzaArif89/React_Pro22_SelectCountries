@@ -4,15 +4,15 @@ import { ValContext } from './Context_Provider'
 
 
 function Countries() {
-  const{data}=useContext(ValContext)
+  const{data,selected}=useContext(ValContext)
 
   return (
     <div className='countries_con'>
      
       {
-        data.map((item)=>{
+        data.map((item,i)=>{
          return(
-          <div className="countries_card">
+          <div className="countries_card"  onClick={()=>{selected(item)}}>
           <img src={item.img} alt="" className="img" />
           <div className="name">{item.name} </div>
          </div>
